@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/ab690271-5b83-492f-9373-ce27bcc7873e.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/110e92f1-913d-4dda-88c6-b019acb1e428.jpg";
 
 const SERVICES = [
   { icon: "Home", title: "Квартиры и дома", desc: "Комплексная уборка жилых помещений — от студии до загородного дома.", price: "от 3 000 ₽" },
