@@ -293,7 +293,7 @@ const Index = () => {
                 </ul>
                 <p className="font-body font-medium text-foreground">VibeClean — чистота, в которой живёт душа.</p>
                 <div className="grid grid-cols-2 gap-4 mt-10">
-                  {[{ icon: "Shield", label: "Застрахованная бригада" }, { icon: "Clock", label: "Приедем вовремя" }, { icon: "Leaf", label: "Эко-средства" }, { icon: "Award", label: "Сертифицированы" }].map(({ icon, label }) => (
+                  {[{ icon: "Clock", label: "Приедем вовремя" }, { icon: "Leaf", label: "Эко-средства" }].map(({ icon, label }) => (
                     <div key={label} className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: MINT_LIGHT }}>
                         <Icon name={icon} size={16} style={{ color: MINT }} />
