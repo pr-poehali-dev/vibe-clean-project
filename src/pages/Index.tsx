@@ -13,9 +13,9 @@ const SERVICES = [
 ];
 
 const PORTFOLIO = [
-  { img: HERO_IMAGE, title: "Квартира на Тверской", area: "85 м²", time: "4 часа" },
-  { img: HERO_IMAGE, title: "Офис IT-компании", area: "320 м²", time: "8 часов" },
-  { img: HERO_IMAGE, title: "Коттедж после ремонта", area: "240 м²", time: "12 часов" },
+  { img: "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/34d63fcd-83e2-4008-b167-74ee8384f1e6.jpg", title: "Квартира на Тверской", area: "85 м²", time: "4 часа" },
+  { img: "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/f550da53-dafc-4f56-9fa0-b96ff33a1dc8.jpg", title: "Офис IT-компании", area: "320 м²", time: "8 часов" },
+  { img: "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/a48ff800-ff01-4413-951d-1568c1693cbe.jpg", title: "Коттедж после ремонта", area: "240 м²", time: "12 часов" },
 ];
 
 const REVIEWS = [
