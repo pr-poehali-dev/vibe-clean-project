@@ -4,9 +4,9 @@ import Icon from "@/components/ui/icon";
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/752b8c8f-c118-4f57-a70d-466f38af88db/files/471b702f-ae1e-4e07-b5f0-53ef671e82ec.jpg";
 
 const SERVICES = [
-  { icon: "Home", title: "Квартиры и дома", desc: "Комплексная уборка жилых помещений — от студии до загородного дома.", price: "от 3 000 ₽" },
-  { icon: "Star", title: "Генеральная", desc: "Глубокая чистка всех поверхностей, мойка окон, чистка мягкой мебели.", price: "от 6 000 ₽" },
-  { icon: "Droplets", title: "Мойка окон", desc: "Мойка окон изнутри и снаружи с использованием безопасных средств.", price: "от 1 500 ₽" },
+  { icon: "Home", emoji: "🧹", title: "Квартиры и дома", desc: "Комплексная уборка жилых помещений — от студии до загородного дома.", price: "от 3 000 ₽" },
+  { icon: "Star", emoji: "✨", title: "Генеральная", desc: "Глубокая чистка всех поверхностей, мойка окон, чистка мягкой мебели.", price: "от 6 000 ₽" },
+  { icon: "Droplets", emoji: "🪟", title: "Мойка окон", desc: "Мойка окон изнутри и снаружи с использованием безопасных средств.", price: "от 1 500 ₽" },
 ];
 
 const PORTFOLIO = [
@@ -328,8 +328,8 @@ const Index = () => {
             {SERVICES.map((s) => (
               <FadeSection key={s.title}>
                 <div className="service-card bg-white border border-border rounded-2xl p-7 h-full flex flex-col">
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{ background: MINT_LIGHT }}>
-                    <Icon name={s.icon} size={20} style={{ color: MINT }} />
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-3xl" style={{ background: MINT_LIGHT }}>
+                    {s.emoji}
                   </div>
                   <h3 className="font-display text-xl font-medium text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm text-muted-foreground font-body leading-relaxed mb-5 flex-1">{s.desc}</p>
