@@ -79,7 +79,7 @@ function NavBar({ onNav }: { onNav: (id: string) => void }) {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <button onClick={() => onNav("hero")} className="font-display tracking-wide text-foreground flex flex-col items-start leading-tight">
-          <span className="text-xs font-bold" style={{ color: MINT }}>Чистый Вайб</span>
+          <span className="text-xl font-bold" style={{ color: MINT }}>Чистый Вайб</span>
           <span className="text-xl font-medium">Vibe<span style={{ color: MINT }}>Clean</span></span>
         </button>
         <nav className="hidden md:flex items-center gap-8">
