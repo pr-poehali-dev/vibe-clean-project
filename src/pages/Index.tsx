@@ -402,34 +402,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-28" style={{ background: STONE_LIGHT }}>
-        <div className="max-w-3xl mx-auto px-6">
-          <FadeSection>
-            <div className="text-center mb-16">
-              <p className="text-xs uppercase tracking-widest mb-4 font-body" style={{ color: MINT }}>FAQ</p>
-              <h2 className="font-display text-5xl font-light text-foreground mb-4">Частые вопросы</h2>
-            </div>
-          </FadeSection>
-          <FadeSection>
-            <div className="flex flex-col gap-3">
-              {FAQ_ITEMS.map((item, i) => (
-                <div key={i} className="bg-white border border-border rounded-2xl overflow-hidden">
-                  <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full flex items-center justify-between px-7 py-5 text-left">
-                    <span className="font-body font-medium text-sm text-foreground pr-4">{item.q}</span>
-                    <Icon name={openFaq === i ? "Minus" : "Plus"} size={16} style={{ color: MINT, flexShrink: 0 }} />
-                  </button>
-                  {openFaq === i && (
-                    <div className="px-7 pb-5">
-                      <p className="text-sm text-muted-foreground font-body leading-relaxed">{item.a}</p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </FadeSection>
-        </div>
-      </section>
+
 
       {/* CONTACT */}
       <section id="contact" className="py-28 bg-background">
