@@ -308,7 +308,7 @@ const Index = () => {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-28 bg-background">
+      <section id="services" className="py-28" style={{ background: "linear-gradient(135deg, hsl(340, 40%, 96%) 0%, hsl(345, 35%, 91%) 100%)" }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeSection>
             <div className="text-center max-w-xl mx-auto mb-16">
