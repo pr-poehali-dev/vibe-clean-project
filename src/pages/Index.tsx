@@ -277,8 +277,21 @@ const Index = () => {
               <div>
                 <p className="text-xs uppercase tracking-widest mb-4 font-body" style={{ color: MINT }}>О нас</p>
                 <h2 className="font-display text-5xl font-light leading-tight mb-6 text-foreground">Мы — команда,<br />которой доверяют</h2>
-                <p className="text-muted-foreground leading-relaxed mb-6 font-body">VibeClean — это не просто клининг. Это тщательно выстроенная система, где каждый сотрудник прошёл обучение и проверку. Мы верим, что чистота — это не событие, а стандарт жизни.</p>
-                <p className="text-muted-foreground leading-relaxed font-body">За 5 лет работы мы обслужили более 500 клиентов в Москве и области. Наш принцип прост: делать так, чтобы вы захотели вернуться.</p>
+                <p className="text-muted-foreground leading-relaxed mb-2 font-body">Мы:</p>
+                <ul className="text-muted-foreground leading-relaxed mb-6 font-body space-y-1">
+                  <li>— профессионально убираем квартиры, дома и офисы;</li>
+                  <li>— подбираем только безопасные и эффективные средства;</li>
+                  <li>— работаем с любовью, как для себя;</li>
+                  <li>— создаём уют и настроение, а не просто чистые поверхности.</li>
+                </ul>
+                <p className="text-muted-foreground leading-relaxed mb-2 font-body">Здесь мы делимся:</p>
+                <ul className="text-muted-foreground leading-relaxed mb-6 font-body space-y-1">
+                  <li>— лайфхаками по уборке и хранению,</li>
+                  <li>— философией уюта и заботы о себе,</li>
+                  <li>— историями и отзывами наших клиентов,</li>
+                  <li>— результатами «до и после».</li>
+                </ul>
+                <p className="font-body font-medium text-foreground">VibeClean — чистота, в которой живёт душа.</p>
                 <div className="grid grid-cols-2 gap-4 mt-10">
                   {[{ icon: "Shield", label: "Застрахованная бригада" }, { icon: "Clock", label: "Приедем вовремя" }, { icon: "Leaf", label: "Эко-средства" }, { icon: "Award", label: "Сертифицированы" }].map(({ icon, label }) => (
                     <div key={label} className="flex items-center gap-3">
