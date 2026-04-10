@@ -244,10 +244,10 @@ const Index = () => {
           <div className="max-w-xl">
             <p className="text-xs uppercase tracking-widest mb-6 font-body fade-up fade-up-delay-1" style={{ color: MINT }}>Профессиональный клининг</p>
             <h1 className="font-display text-6xl md:text-7xl font-light leading-tight mb-6 text-foreground fade-up fade-up-delay-2">
-              Пространство,<br /><em style={{ color: MINT }}>которое дышит</em>
+              Чистый Вайб (VibeClean) —<br /><em style={{ color: MINT }}>чистота с душой</em>
             </h1>
             <p className="text-base text-muted-foreground leading-relaxed mb-10 font-body fade-up fade-up-delay-3 max-w-md">
-              Возвращаем чистоту и свежесть вашему дому или офису. Профессиональная команда, безопасная химия, результат — с первого раза.
+              Делаем чистоту лёгкой, уютной и вдохновляющей.<br />Мы верим, что порядок вокруг рождает гармонию внутри.
             </p>
             <div className="flex flex-wrap gap-4 fade-up fade-up-delay-4">
               <button onClick={() => scrollTo("contact")} className="px-8 py-4 rounded-full font-medium text-sm text-white hover:opacity-90 transition-opacity" style={{ background: MINT }}>
