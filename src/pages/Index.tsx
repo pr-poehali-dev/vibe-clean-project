@@ -100,10 +100,10 @@ function NavBar({ onNav }: { onNav: (id: string) => void }) {
 
 function Calculator() {
   const [area, setArea] = useState(60);
-  const [type, setType] = useState<"standard" | "general" | "repair">("standard");
+  const [type, setType] = useState<"standard" | "general" | "windows">("standard");
   const [extras, setExtras] = useState<string[]>([]);
 
-  const basePrices = { standard: 40, general: 70, repair: 85 };
+  const basePrices = { standard: 40, general: 70, windows: 25 };
   const extraPrices: Record<string, number> = { windows: 1500, furniture: 2000, balcony: 1200 };
   const total = Math.round(basePrices[type] * area) + extras.reduce((s, e) => s + extraPrices[e], 0);
 
@@ -120,7 +120,7 @@ function Calculator() {
       <div className="mb-6">
         <label className="text-sm text-muted-foreground mb-3 block">Тип уборки</label>
         <div className="grid grid-cols-3 gap-2">
-          {[{ key: "standard", label: "Поддерживающая" }, { key: "general", label: "Генеральная" }, { key: "repair", label: "После ремонта" }].map(({ key, label }) => (
+          {[{ key: "standard", label: "Поддерживающая" }, { key: "general", label: "Генеральная" }, { key: "windows", label: "Мойка окон" }].map(({ key, label }) => (
             <button key={key} onClick={() => setType(key as typeof type)} className="py-2 px-3 rounded-xl text-xs font-medium border transition-all"
               style={type === key ? { background: MINT, color: "white", borderColor: MINT } : { background: "transparent", color: "hsl(160,8%,12%)", borderColor: "hsl(155,10%,88%)" }}>
               {label}
