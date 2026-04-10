@@ -33,9 +33,9 @@ const FAQ_ITEMS = [
   { q: "Есть ли гарантия качества?", a: "Да. Если вас что-то не устраивает, мы вернёмся и исправим бесплатно в течение 24 часов после уборки." },
 ];
 
-const MINT = "hsl(160, 20%, 30%)";
-const MINT_LIGHT = "hsl(155, 25%, 92%)";
-const STONE_LIGHT = "hsl(30, 5%, 96%)";
+const MINT = "hsl(345, 55%, 35%)";
+const MINT_LIGHT = "hsl(340, 30%, 93%)";
+const STONE_LIGHT = "hsl(35, 18%, 96%)";
 
 function useFadeOnScroll() {
   const ref = useRef<HTMLDivElement>(null);
