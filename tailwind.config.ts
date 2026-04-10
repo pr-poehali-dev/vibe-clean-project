@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1775818220626823041.html"
 	],
 	prefix: "",
 	theme: {
@@ -86,10 +87,22 @@ export default {
 					}
 				}
 			},
+			fontFamily: {
+				display: ['Cormorant', 'serif'],
+				body: ['Golos Text', 'sans-serif'],
+			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-up': 'fadeUp 0.7s ease forwards',
+			},
+			keyframes: {
+				...({} as Record<string, Record<string, Record<string, string>>>),
+				fadeUp: {
+					from: { opacity: '0', transform: 'translateY(24px)' },
+					to: { opacity: '1', transform: 'translateY(0)' },
+				},
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
