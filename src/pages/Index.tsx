@@ -258,7 +258,7 @@ const Index = () => {
               </button>
             </div>
             <div className="flex gap-10 mt-16 fade-up fade-up-delay-5">
-              {[{ num: "500+", label: "Клиентов" }, { num: "5 лет", label: "На рынке" }, { num: "100%", label: "Гарантия" }].map(({ num, label }) => (
+              {[{ num: "100%", label: "Гарантия" }].map(({ num, label }) => (
                 <div key={label}>
                   <p className="font-display text-3xl font-medium text-foreground">{num}</p>
                   <p className="text-xs text-muted-foreground font-body mt-0.5">{label}</p>
